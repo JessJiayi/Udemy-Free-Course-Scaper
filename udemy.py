@@ -1,13 +1,14 @@
 import requests,re
 from bs4 import BeautifulSoup
 
-input=input('What course you want to search? ')
+course=input('What course you want to search? ')
+page_nums=int(input('How many pages you want to scaper? '))
 print("")
-key=str(input).replace(' ','+')
+key=str(course).replace(' ','+')
 
 a=1
 list=[]
-while a < 6:
+while a < page_nums+1:
     link="https://www.tutorialbar.com/page/"+str(a)+"/?s="+key+"&post_type=post"
     a+=1
     r=requests.get(link)
@@ -25,7 +26,7 @@ while a < 6:
             print(udemy)
 
 a=1
-while a < 4:
+while a < page_nums+1:
     link="https://www.discudemy.com/search/"+str(a)+"/"+key+".jsf"
     a+=1
     r=requests.get(link)
@@ -49,7 +50,7 @@ while a < 4:
 
 
 with open("udemy.txt",'w+') as f:
-    f.write("Free Coupon for "+input+": \n")
+    f.write("Free Coupon for "+course+": \n")
     for page in list:
         if page not in f:
             f.write("%s\n" % page)

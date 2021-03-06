@@ -8,7 +8,8 @@
 
 Data scapered by www.tutorialbar.com, www.discudemy.com
 ![image](https://user-images.githubusercontent.com/58965055/110190091-9d9e8700-7def-11eb-9d29-37d0d68847ed.png)
-![image](https://user-images.githubusercontent.com/58965055/110190095-a000e100-7def-11eb-930d-7d5a49612aea.png)
+![image](https://user-images.githubusercontent.com/58965055/110190179-0259e180-7df0-11eb-8e55-a886c04eecec.png)
+
 
 
 ## Author
